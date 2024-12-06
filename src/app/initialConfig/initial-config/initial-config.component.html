@@ -1,1 +1,67 @@
-<p>initial-config works!</p>
+<header>
+  <div class="niggaEdit">
+    <h2>With A pink Dick Am a black Nigga My Self Kalana :P</h2>
+  </div>
+</header>
+<main class="page-container">
+  <section class="form-container">
+    <form class="ticket-form" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="totalTicket" class="form-label">Enter total tickets</label>
+        <input
+          id="totalTicket"
+          type="number"
+          class="form-input"
+          placeholder="Enter total tickets"
+          aria-label="Enter total tickets"
+          [(ngModel)]="configData.totalTicket"
+          name="totalTicket"
+        />
+        <p>{{configData.totalTicket}}</p>
+      </div>
+      <div class="form-group">
+        <label for="ticketReleaseRate" class="form-label">Enter ticket Release Rate</label>
+        <input
+          id="ticketReleaseRate"
+          type="number"
+          class="form-input"
+          placeholder="Enter ticket Release Rate"
+          aria-label="Enter ticket Release Rate"
+          [(ngModel)]="configData.ticketReleaseRate"
+          name="ticketReleaseRate"
+        />
+        <p>{{configData.ticketReleaseRate}}</p>
+      </div>
+      <div class="form-group">
+        <label for="consumerRetrieveRate" class="form-label">Enter consumer Retrieve Rate</label>
+        <input
+          id="consumerRetrieveRate"
+          type="number"
+          class="form-input"
+          placeholder="Enter consumer Retrieve Rate"
+          aria-label="Enter consumer Retrieve Rate"
+          [(ngModel)]="configData.consumerRetrieveRate"
+          name="consumerRetrieveRate"
+        />
+        <p>{{configData.consumerRetrieveRate}}</p>
+      </div>
+      <div class="form-group">
+        <label for="ticketPoolCapacity" class="form-label">Enter ticket Pool Capacity</label>
+        <input
+          id="ticketPoolCapacity"
+          type="number"
+          class="form-input"
+          placeholder="Enter ticket Pool Capacity"
+          aria-label="Enter ticket Pool Capacity"
+          [(ngModel)]="configData.ticketPoolCapacity"
+          name="ticketPoolCapacity"
+        />
+        <p>{{configData.ticketPoolCapacity}}</p>
+      </div>
+      <button type="submit" class="submit-button">
+        Continue
+      </button>
+    </form>
+  </section>
+</main>
+

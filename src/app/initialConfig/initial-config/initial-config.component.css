@@ -1,0 +1,121 @@
+.page-container {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter, sans-serif;
+  line-height: 1;
+  padding: 131px 80px;
+}
+
+.form-container {
+  border-radius: 32px;
+  background: #d9d9d9;
+  width: 581px;
+  max-width: 100%;
+  padding: 100px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket-form {
+  width: 354px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -51px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 31px;
+}
+
+.form-label {
+  color: #000;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.form-input {
+  border-radius: 10px;
+  background: #fff;
+  padding: 18px 16px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #d8dadc;
+  width: 90%;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 16px;
+}
+
+.submit-button {
+  border-radius: 10px;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  min-height: 56px;
+  margin-top: 26px;
+}
+
+.submit-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media (max-width: 991px) {
+  .page-container {
+    padding: 100px 20px;
+  }
+
+  .form-container {
+    padding: 100px 20px;
+  }
+
+  .ticket-form {
+    margin-bottom: 10px;
+  }
+
+  .submit-button {
+    margin-top: 40px;
+    padding: 18px 20px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.niggaEdit{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  background-color: #f0f003;
+  padding: 10px;
+  margin-bottom: 0px;
+}
